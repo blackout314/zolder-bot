@@ -14,7 +14,9 @@ logThis(999, json_encode($update));
 $new    = $update['message']['new_chat_members'];
 $left   = $update['message']['left_chat_member'];
 
-if($update['message']['text']=="/start"){
+$msg    = $update['message']['text'];
+
+if($msg == "/start" || $msg == "/help"){
     $chat_id = $update['message']['from']['id'];
 
     makeHTTPRequest('sendMessage',[
