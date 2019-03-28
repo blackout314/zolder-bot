@@ -21,7 +21,7 @@ if($msg == "/start" || $msg == "/help"){
 
     makeHTTPRequest('sendMessage',[
         'chat_id'   => $update['message']['from']['id'],
-        'text'      => '!zbalance <i>address</i>',
+        'text'      => "!zbalance <i>address</i>\n!ztx <i>address</i> last 10 tx",
         'parse_mode'=> 'HTML',
     ]);
 }
