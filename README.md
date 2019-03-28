@@ -1,5 +1,7 @@
 # zolder-bot #
 
+[![Build Status](https://travis-ci.org/blackout314/zolder-bot.svg?branch=master)](https://travis-ci.org/blackout314/zolder-bot)
+
 [telegram me](t.me/zolder_bot)
 
 ## command ##
