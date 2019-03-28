@@ -1,5 +1,17 @@
 <?php
 
+function returnTx($address) {
+  $re = '/^\([0-9]+\)\ [0-9\-T\:Z]+\ [0-9\.]+(ZLD)\ [0-9a-z]+\ [0-9a-zA-Z\s\.]+/m';
+  $str = file_get_contents('http://159.203.19.189:4096/wallet/'.$address.'.txt');
+  preg_match_all($re, $str, $matches, PREG_SET_ORDER, 0);
+  $out = '';
+
+  for($i=count($matches); $i > count($matches)-10; $i--) {
+    $out .= str_replace("\t\n",'',trim($matches[$i][0]))."\n";
+  }
+  return $out;
+}
+
 function returnZold($address) {
   $re = '/Balance\:\s[0-9\.]+/m';
   $str = file_get_contents('http://159.203.19.189:4096/wallet/'.$address.'.txt');
