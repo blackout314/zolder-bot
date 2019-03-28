@@ -4,3 +4,4 @@
 
 ## command ##
 * `!zbalance address` balance of this address
+* `!ztx address` last 10 tx of this address
