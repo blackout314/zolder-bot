@@ -8,5 +8,5 @@
 [![Build Status](https://travis-ci.org/blackout314/zolder-bot.svg?branch=master)](https://travis-ci.org/blackout314/zolder-bot)
 
 ## command ##
-* `!zbalance address` balance of this address
-* `!ztx address` last 10 tx of this address
+* `/balance address` balance of this address
+* `/show  address` last 10 tx of this address
