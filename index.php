@@ -26,8 +26,8 @@ if($msg == "/start" || $msg == "/help"){
     ]);
 }
 
-if(preg_match('/^!zbalance(\s)+([0-9a-z])+/i', $msg)) {
-    $addr = trim(str_replace('!zbalance','',$msg));
+if(preg_match('/^\/balance(\s)+([0-9a-z])+/i', $msg)) {
+    $addr = trim(str_replace('/balance','',$msg));
 
     makeHTTPRequest('sendMessage',[
         'chat_id'   => $update['message']['from']['id'],
@@ -36,8 +36,8 @@ if(preg_match('/^!zbalance(\s)+([0-9a-z])+/i', $msg)) {
     ]);
 }
 
-if(preg_match('/^!ztx(\s)+([0-9a-z])+/i', $msg)) {   
-    $addr = trim(str_replace('!ztx','',$msg));
+if(preg_match('/^\/show(\s)+([0-9a-z])+/i', $msg)) {   
+    $addr = trim(str_replace('/show','',$msg));
 
     makeHTTPRequest('sendMessage',[
         'chat_id'   => $update['message']['from']['id'],
