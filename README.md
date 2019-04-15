@@ -1,5 +1,5 @@
 # zolder-bot #
-[telegram me](t.me/zolder_bot)
+[telegram me](https://t.me/zolder_bot)
 
 ![zold](assets/zold.png)
 
